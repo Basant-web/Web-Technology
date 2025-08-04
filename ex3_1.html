@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float Property Example</title>
+  <style>
+    .float-img-left {
+      float: left;
+      margin: 10px 20px 10px 0;
+      width: 200px;
+      height: auto;
+    }
+    .float-img-right {
+      float: right;
+      margin: 10px 0 10px 20px;
+      width: 200px;
+      height: auto;
+    }
+    body {
+      background-color: #e0f7fa;
+      color: #222;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h2>Float Property Example</h2>
+  <div class="clearfix">
+    <img src="pexels-photo-112460.jpeg" alt="Sample Left" class="float-img-left">
+    <p>
+      This image is floated to the left. The text wraps around the image, demonstrating how the float property works in CSS. You can use <b>float: left</b> to align images or other elements to the left, allowing content to flow around them.
+    </p>
+    <p>
+      The float property is useful for creating layouts where you want text or other elements to wrap around images or boxes. Remember to clear floats if you want to prevent layout issues.
+    </p>
+  </div>
+  <div class="clearfix">
+    <img src="pexels-photo-112460.jpeg" alt="Sample Right" class="float-img-right">
+    <p>
+      This image is floated to the right. The text wraps around the image on the left side. Use <b>float: right</b> for similar effects on the opposite side.
+    </p>
+    <p>
+      Experiment with different float directions and margins to achieve the layout you want!
+    </p>

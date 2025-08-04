@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Var() Example</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+  --box-bg: #bd4d4d;
+  --box-border: 2px solid black;
+  --text-bg: white;
+  --text-color: black;
+  --box-padding: 20px;
+  --box-width: 90%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  background-color: var(--box-bg);
+  border: var(--box-border);
+  padding: var(--box-padding);
+  width: var(--box-width);
+  margin: 20px auto;
+}
+
+.text {
+  background-color: var(--text-bg);
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="text">Lorem Ipsum</span>
+  </div>
+</body>
+</html>
